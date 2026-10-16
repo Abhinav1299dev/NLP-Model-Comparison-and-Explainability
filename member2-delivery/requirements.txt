@@ -1,0 +1,19 @@
+# Member 2 — tested with: Python 3.12, torch 2.14.1 (CPU), transformers 5.19.0 and 4.46.3,
+# tokenizers 0.23.3, numpy 2.4.4, pandas 3.0.2, beautifulsoup4 4.14.3, pytest 9.1.1.
+
+# --- Inference (required by models/model2.py) ---
+torch>=2.2
+transformers>=4.46,<6
+tokenizers>=0.20
+safetensors>=0.4
+numpy>=1.24
+
+# --- Training / data pipeline (notebook, training/) ---
+pandas>=2.0
+requests>=2.31
+beautifulsoup4>=4.12
+datasets>=2.19          # only for training/inspect_hf_candidate.py
+huggingface_hub>=0.23
+
+# --- Tests ---
+pytest>=8.0

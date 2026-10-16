@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# Data: raw downloads and generated files (CC BY-NC-SA source; regenerate with the scripts)
+data/raw/
+data/processed/
+data/annotation/*.csv
+data/annotation/*.jsonl
+!data/annotation/.gitkeep
+
+# Model artifacts: share via release asset / Drive, not git (≈ 420 MB)
+weights/model2/*
+!weights/model2/README.md
+reports/
+
+# Secrets / env
+.env
+*.token
+hf_token*
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
